@@ -1,0 +1,34 @@
+// GENERAL
+button {
+	cursor: pointer;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.app {
+	display: flex;
+	margin-left: calc(2rem + 32px);
+
+	main {
+		// flex: 1 1 0;
+		margin: 2rem auto;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #D5D5D5;
+	border: 2px solid transparent;
+	border-left: 3px solid transparent;
+	border-radius: 6px;
+	background-clip: content-box;
+}
