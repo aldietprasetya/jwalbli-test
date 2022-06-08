@@ -3,8 +3,148 @@
 	background: white;
 	padding: 3%;
 	border-radius: 0.5rem;
-	display: flex;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, .12);
+
+	&__load {
+		text-align: center;
+	}
+
+	&__comment {
+		&-container {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #cccccc;
+		}
+		&-input {
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+		&-button {
+			align-items: flex-end;
+			width: 10%;
+			padding: 10px;
+			background: var(--primary);
+		}
+	}
+
+	&__tools {
+		position: absolute;
+		display: flex;
+		right: 0;
+		&-section {
+			@extend %transition;
+			cursor: pointer;
+			width: 20px;
+    	height: 20px;
+			border-radius: 5px;
+			margin-left: 5px;
+			span {
+				font-size: 20px;
+			}
+			&:hover {
+				background: var(--primary);
+				span {
+					color: white;
+				}
+			}
+		}
+	}
+
+	&__posts {
+		position: relative;
+		margin-bottom: 1rem;
+		padding: 0 0 20px 0;
+		border-bottom: 1px solid #f3f3f3;
+		&-container {
+			display: flex;
+			&_border {
+				padding-bottom: 10px;
+				border-bottom: 1px dashed #f3f3f3;
+			}
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+		&-img-container {
+			width: 80px;
+			img {
+				width: 80px;
+				border-radius: 10px;
+			}
+		}
+		&-section {
+			padding: .5rem 1rem;
+		}
+		&-name {
+			@include font(18px, 22px, 700, #495057);
+			display: flex;
+			align-items: center;
+			span {
+				a {
+					@extend %transition;
+					@include font(12px, 22px, 700, #495057);
+					margin-left: 6px;
+					text-decoration: none;
+					&:hover {
+						color: var(--primary);
+					}
+				}
+			}
+		}
+		&-body {
+			@include font(12px, 22px, 400, #495057);
+			margin-top: 10px;
+		}
+		&-infos {
+			position: absolute;
+			padding: 0.6rem 0;
+		}
+	}
+
+	&__comment {
+		display: flex;
+		border-bottom: 1px solid #f3f3f3;
+		margin-left: 7rem;
+		&:last-child {
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+		&-img-container {
+			width: 80px;
+			img {
+				width: 80px;
+				border-radius: 10px;
+			}
+		}
+		&-section {
+			padding: .5rem 1rem;
+		}
+		&-name {
+			@include font(18px, 22px, 700, #495057);
+			display: flex;
+			align-items: center;
+			span {
+				a {
+					@extend %transition;
+					@include font(12px, 22px, 700, #495057);
+					margin-left: 6px;
+					text-decoration: none;
+					&:hover {
+						color: var(--primary);
+					}
+				}
+			}
+		}
+		&-body {
+			@include font(12px, 22px, 400, #495057);
+			margin-top: 10px;
+		}
+	}
+
 	@media (min-width: 576px) {
 		max-width: 540px;
 	}
@@ -15,6 +155,6 @@
 		max-width: 960px;
 	}
 	@media (min-width: 1200px) {
-		max-width: 1140px;
+		max-width: 960px;
 	}
 }

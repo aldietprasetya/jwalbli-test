@@ -13,12 +13,15 @@
 @import "elements/page";
 
 //Object
+@import "object/transition";
 
 
 //Components
 @import "components/sidebar";
 @import "components/home";
 @import "components/comments";
+@import "components/modal";
+@import "components/account";
 
 //Utilities
 @import "utilities/trump";
