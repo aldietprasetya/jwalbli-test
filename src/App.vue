@@ -3,6 +3,9 @@
 		<!-- Sidebar -->
 		<Sidebar />
 
+		<!-- Sidebar -->
+		<Bottombar />
+
 		<!-- Content -->
 		<router-view />
 	</div>
@@ -10,6 +13,7 @@
 
 <script setup>
 import Sidebar from './components/Sidebar.vue'
+import Bottombar from './components/Bottombar.vue'
 </script>
 
 <style lang="scss">

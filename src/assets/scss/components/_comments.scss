@@ -24,7 +24,7 @@
 		}
 		&-button {
 			align-items: flex-end;
-			width: 10%;
+			width: 5rem;
 			padding: 10px;
 			background: var(--primary);
 		}
@@ -48,6 +48,15 @@
 				background: var(--primary);
 				span {
 					color: white;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			top: 5px;
+			right: 5px;
+			&-section {
+				span {
+					font-size: 16px;
 				}
 			}
 		}
@@ -103,6 +112,15 @@
 			position: absolute;
 			padding: 0.6rem 0;
 		}
+
+		@media (max-width: 768px) {
+			margin-top: 2rem;
+			padding: 1rem;
+			box-shadow: 0px 2px 8px rgba(0, 0, 0, .12);
+			&-infos {
+				display: none;
+			}
+		}
 	}
 
 	&__comment {
@@ -142,6 +160,14 @@
 		&-body {
 			@include font(12px, 22px, 400, #495057);
 			margin-top: 10px;
+		}
+
+		@media (max-width: 768px) {
+			margin-left: 0;
+			&-name {
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 	}
 
